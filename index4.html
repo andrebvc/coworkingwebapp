@@ -1,0 +1,95 @@
+<!--
+*@name: Coworking Web App
+*@Course Code:SODV1201
+*@class: Software Development Diploma Program.
+*@author: Andre Albuquerque.*/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-Working App!</title>
+    <link rel="stylesheet" type="text/css" href="index.css"></link>
+</head>
+
+<body>
+    
+    <div class="topBox">
+        <p class="title" id="test">Co-Working App For You!</p>
+        <br>
+        
+    </div>
+        <div id="wrapperindex4">
+        <div id="form">
+            <form>
+            <lable><b>Add Property</b></lable><br><input class="inputBoxes" id="propertyname" type="text" placeholder="Property Name"></input><br>
+            <lable>Location</lable><br>
+            <select id="location" name="location">
+                <option value="Calgary">Calgary</option>
+                <option value="Edmonton">Edmonton</option>
+                <option value="Lethbridge">Lethbridge</option>
+                <option value="Vancouver">Vancouver</option>
+                <option value="Kamloops">Kamloops</option>
+            </select><br>
+            <lable>Number of Rooms</lable><br><input class="inputBoxes" id="rooms" type="text" placeholder="Number of Rooms"></input><br>
+            <lable>Address</lable><br><input class="inputBoxes" id="address" type="text" placeholder="Address"></input><br>
+            <lable>Neighborhood</lable><br><input class="inputBoxes" id="neighborhood" type="text" placeholder="Neighborhood"></input><br>
+            <lable>Squarefeet</lable><br><input class="inputBoxes" id="squarefeet" type="text" placeholder="Squarefeet"></input><br>
+            <lable>Has Garage Parking</lable>
+            <select id="hasgarage" name="Has Garage">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select><br>
+            <lable>Access to Public Transport</lable>
+            <select id="publictransport" name="Access to Public Transport">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select><br>
+            <p><b>Workspaces</b></p>
+            <lable>Number of Meeting Rooms</lable><br><input class="inputBoxes" id="meetingrooms" type="text" placeholder="Number of Meeting Rooms"></input><br>
+            <lable>Number of Private Rooms</lable><br><input class="inputBoxes" id="privaterooms" type="text" placeholder="Number of Private Rooms"></input><br>
+            <lable>Number of Open Desks</lable><br><input class="inputBoxes" id="opendesks" type="text" placeholder="Number of Open Desks"></input><br>
+            <button onclick="addProperty()" type="reset">Add Property</button>
+        </form>
+        </div>
+
+        <div id="form2">
+            <form>
+            <lable><b>Remove Property by Name</b></lable><br><input class="inputBoxes" id="propertynamedelete" type="text" placeholder="Property Name"></input><br>
+            
+            <button onclick="removeProperty()" type="reset">Remove Property</button>
+        </form>
+        </div>
+
+
+        
+        <nav class="vertical">
+            <ul>
+                <li>
+                        <a href="indexhome.html">Home</a></li>
+                <li>
+                        <a href="index.html">Sign Up</a></li>
+                <li>
+                        <a href="index2.html" id="logout">Log-In</a></li>
+                <li>
+                        <a href="index3.html">Properties</a></li>
+                <li>
+                        <a href="index4.html">Manage Properties</a></li>
+            </ul>
+        </nav>
+    </div>
+        <!-- Footer -->
+    
+          <footer>
+            <p id="footerparagraph">
+              Text
+            </p>
+        </footer>
+        
+        <script src="index.js"></script>
+        <script>checkForOwner()</script>
+
+</body>
+</html>

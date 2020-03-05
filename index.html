@@ -1,0 +1,71 @@
+<!--
+*@name: Coworking Web App
+*@Course Code:SODV1201
+*@class: Software Development Diploma Program.
+*@author: Andre Albuquerque.*/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-Working App!</title>
+    <link rel="stylesheet" type="text/css" href="index.css"></link>
+</head>
+
+<body>
+    
+    <div class="topBox">
+        <p class="title" id="test">Co-Working App For You!</p>
+        <br>
+        
+    </div>
+    <div id="form">
+        <form>
+        <lable>Username</lable><br><input class="inputBoxes" id="userNameBox" type="text" placeholder="Username"></input><br>
+        <lable>E-mail</lable><br><input class="inputBoxes" id="emailBox" type="text" placeholder="E-mail"></input><br>
+        <lable>Phone</lable><br><input class="inputBoxes" id="phoneBox" type="text" placeholder="Phone"></input><br>
+        <lable>Password</lable><br><input class="inputBoxes" id="passwordBox" type="password" placeholder="Password"></input><br>
+        <input type="checkbox" onclick="showPassword()">Show Password<br><br>
+        <lable>Register as:</lable><br><br>
+        <select id="ownerorcoworker" name="Register">
+            <option value="0">Coworker</option>
+            <option value="1">Owner</option>
+        </select><br>
+        <button onclick="register()" type="reset">Sign Up</button>
+    </form>
+    </div>
+
+
+      
+    <nav class="vertical">
+        <ul>
+            <li>
+                    <a href="indexhome.html">Home</a></li>
+            <li>
+                    <a href="index.html">Sign Up</a></li>
+            <li>
+                    <a href="index2.html" id="logout">Log-In</a></li>
+            <li>
+                    <a href="index3.html">Properties</a></li>
+            <li>
+                    <a href="index4.html">Manage Properties</a></li>
+        </ul>
+    </nav>
+            
+            
+
+        <!-- Footer -->
+    
+          <footer>
+            <p id="footerparagraph">
+              Text
+            </p>
+        </footer>
+
+        <script src="index.js"></script>
+
+</body>
+</html>
+

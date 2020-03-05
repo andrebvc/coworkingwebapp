@@ -1,0 +1,91 @@
+<!--
+*@name: Coworking Web App
+*@Course Code:SODV1201
+*@class: Software Development Diploma Program.
+*@author: Andre Albuquerque.*/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-Working App!</title>
+    <link rel="stylesheet" type="text/css" href="index.css"></link>
+</head>
+
+<body>
+    
+    <div class="topBox">
+        <p class="title" id="test">Co-Working App For You!</p>
+        <br>
+        
+    </div>
+
+    <div id="wrapperindex3">
+        <div id="form">
+            <form>
+            <lable>Select location and click to list all properties from that city.</lable><br>
+            <select id="location" name="location">
+                <option value="Calgary">Calgary</option>
+                <option value="Edmonton">Edmonton</option>
+                <option value="Lethbridge">Lethbridge</option>
+                <option value="Vancouver">Vancouver</option>
+                <option value="Kamloops">Kamloops</option>
+            </select><br>
+
+            <button onclick="listProperties()" type="reset">List Properties</button>
+        </form>
+            <p id="listOfProperties"></p>
+            
+        </div>
+
+        <div id="form2">
+        
+            <lable>Filter by number of available rooms.</lable><br>
+            <select id="numberofrooms" name="numberofrooms">
+                <option value="10">Up to 10 Rooms</option>
+                <option value="20">10 to 20 Rooms</option>
+                <option value="30">20 to 30 Rooms</option>
+                <option value="40">30 to 40 Rooms</option>
+                <option value="50">40 or more Rooms</option>
+            </select><br>
+
+            <button onclick="listPropertiesByRooms()">List Properties</button>
+
+            <p id="listOfPropertiesByRoom"></p>
+            
+        </div>
+
+    
+
+    
+    <nav class="vertical">
+        <ul>
+            <li>
+                    <a href="indexhome.html">Home</a></li>
+            <li>
+                    <a href="index.html">Sign Up</a></li>
+            <li>
+                    <a href="index2.html" id="logout">Log-In</a></li>
+            <li>
+                    <a href="index3.html">Properties</a></li>
+            <li>
+                    <a href="index4.html">Manage Properties</a></li>
+        </ul>
+    </nav>
+        
+    </div>    
+        
+        <!-- Footer -->
+    
+          <footer>
+            <p id="footerparagraph">
+              Text
+            </p>
+        </footer>
+        
+        <script src="index.js"></script>
+
+</body>
+</html>
